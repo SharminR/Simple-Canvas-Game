@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Game</title>
+  </head>
+  <body onload="restartGame()">
+<div id="myfilter" style="position: fixed; background-color: rgb(0, 0, 0); opacity: 0.3; width: 322px; height: 182px; display: block;"></div>
+<div id="myrestartbutton" style="position: absolute; padding-top: 75px; padding-left: 120px; display: block;"><button onclick="restartGame()">Restart</button></div>
+<div id="canvascontainer"><canvas width="320" height="180"></canvas></div>
+<br>
+<div style="text-align:center; width:320px;">
+  <button ontouchstart="moveup()" onmousedown="moveup()" onmouseup="clearmove()">UP</button><br><br>
+  <button ontouchstart="moveleft()" onmousedown="moveleft()" onmouseup="clearmove()">LEFT</button>
+  <button ontouchstart="moveright()" onmousedown="moveright()" onmouseup="clearmove()">RIGHT</button><br><br>
+  <button ontouchstart="movedown()" onmousedown="movedown()" onmouseup="clearmove()">DOWN</button>
+</div>
+<br>
+<script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
